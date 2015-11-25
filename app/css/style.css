@@ -1,0 +1,121 @@
+body {
+  background-color: #FCFCFA;
+  font-size: 16px;
+  font-family: 'sans-serif', sans-serif;
+}
+body .sidebar {
+  margin-top: 50px;
+}
+body .sidebar li {
+  list-style: none;
+}
+.forced .node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+.forced .node text {
+  opacity: 0;
+  stroke: #484848;
+  pointer-events: none;
+}
+.forced .node.active text {
+  opacity: 1;
+}
+.forced .node.visible text {
+  opacity: 1;
+}
+.forced .link {
+  stroke: #999;
+  stroke-opacity: .6;
+}
+.hive .axis {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+.hive .node circle {
+  stroke: #000;
+}
+.hive .link {
+  fill: none;
+  stroke: #999;
+  stroke-width: 1.5px;
+  stroke-opacity: .3;
+}
+.hive .link.active {
+  stroke: red;
+  stroke-width: 2px;
+  stroke-opacity: 1;
+}
+.hive .node circle.active {
+  opacity: 1;
+  stroke: red;
+  stroke-width: 3px;
+}
+.dendrogram text {
+  opacity: 1;
+}
+.dendrogram .node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+.dendrogram .node {
+  stroke-width: 0;
+  font: 10px sans-serif;
+  color: black;
+}
+.dendrogram .node text {
+  opacity: 1;
+}
+.dendrogram .node.bold text {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.dendrogram .link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+.matrix text {
+  font: 9px sans-serif;
+}
+.matrix .background {
+  fill: #eee;
+}
+.matrix line {
+  stroke: #fff;
+}
+.matrix text.active {
+  fill: red;
+}
+.matrix text.bold {
+  fill: blue;
+  font-weight: bold;
+}
+.crossfilter svg {
+  font: 9px sans-serif;
+}
+.crossfilter .area {
+  fill: steelblue;
+  clip-path: url(#clip);
+}
+.crossfilter .line {
+  fill: none;
+  stroke: steelblue;
+  shape-rendering: crispEdges;
+  stroke-width: 2px;
+}
+.crossfilter .tick {
+  font: 9px sans-serif;
+}
+.crossfilter .axis path,
+.crossfilter .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.crossfilter .brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}

@@ -1,0 +1,155 @@
+body {
+    background-color: #FCFCFA;
+    font-size: 16px;
+    font-family: 'sans-serif', sans-serif;
+    .sidebar {
+        margin-top: 50px;
+        li{
+            list-style: none;
+        }
+    }
+}
+
+.forced {
+
+    .node {
+        stroke: #fff;
+        stroke-width: 1.5px;
+        text {
+            opacity: 0;
+            stroke: #484848;
+            pointer-events: none;
+        }
+        &.active text{
+            opacity: 1;
+        }
+        &.visible text{
+            opacity: 1;
+        }
+    }
+
+    .link {
+        stroke: #999;
+        stroke-opacity: .6;
+    }
+}
+
+.hive {
+    .axis {
+        stroke: #000;
+        stroke-width: 1.5px;
+    }
+
+    .node circle {
+        stroke: #000;
+    }
+
+    .link {
+        fill: none;
+        stroke: #999;
+        stroke-width: 1.5px;
+        stroke-opacity: .3;
+    }
+
+    .link.active {
+        stroke: red;
+        stroke-width: 2px;
+        stroke-opacity: 1;
+    }
+
+    .node circle.active {
+        opacity: 1;
+        stroke: red;
+        stroke-width: 3px;
+    }
+}
+
+.dendrogram {
+
+    text {
+        opacity: 1;
+    }
+    .node circle {
+        fill: #fff;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+    }
+
+    .node {
+        text {
+            opacity: 1;
+        }
+        stroke-width: 0;
+        font: 10px sans-serif;
+        color: black;
+
+        &.bold text{
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    }
+
+    .link {
+        fill: none;
+        stroke: #ccc;
+        stroke-width: 1.5px;
+    }
+}
+
+.matrix {
+    text {
+        font: 9px sans-serif;
+    }
+
+    .background {
+        fill: #eee;
+    }
+
+    line {
+        stroke: #fff;
+    }
+
+    text.active {
+        fill: red;
+    }
+    text.bold {
+        fill: blue;
+        font-weight: bold;
+    }
+}
+
+.crossfilter {
+
+    svg {
+        font: 9px sans-serif;
+    }
+
+    .area {
+        fill: steelblue;
+        clip-path: url(#clip);
+    }
+
+    .line {
+        fill: none;
+        stroke: steelblue;
+        shape-rendering: crispEdges;
+        stroke-width: 2px;
+    }
+
+    .tick {
+        font: 9px sans-serif;
+    }
+
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+    .brush .extent {
+        stroke: #fff;
+        fill-opacity: .125;
+        shape-rendering: crispEdges;
+    }
+}
